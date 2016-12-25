@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<title>Sónia's Profile Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("profilePicture.png");
+    min-height: 100%;
+}
+</style>
+<body>
+
+<!-- Sidenav with image -->
+<nav class="w3-sidenav w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidenav (reveals when clicked on menu icon)-->
+<nav class="w3-sidenav w3-black w3-animate-right w3-center w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidenav">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-closenav w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+  <a href="#portfolio" class="w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+  <a href="#about" class="w3-text-grey w3-hover-black" onclick="closeNav()">Projects</a>
+  <a href="#contact" class="w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidenav -->
+  <span class="w3-opennav w3-top w3-padding-top w3-xxlarge w3-margin-right w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-padding-128 w3-center" id="home">
+    <h1 class="w3-jumbo"><b>Sónia Alves</b></h1>
+    <p>Junior Developer</p>
+    <img src="profilePicture.png" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="profilePicture.png" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <button class="w3-btn w3-light-grey w3-padding-large w3-margin-top">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About</h2>
+    <hr class="w3-opacity">
+    <p>Ever since I was a child, the one thing that I love to do is learning. To feel and experience how the world works and ticks. That interest
+      took me to Psychology, where I got to know more about the behaviour and human motivations. Not simply satisfied by that, I
+      chose to embrace a completely different area of exper t i se, the IT. As a lover of programming, I like to be challenged to find
+      solutions for multiple and varied problems. I believe on putting great effort and passion on each and every small task that we do, only
+      then we can look back and be proud on a job well done.
+    </p>
+    <h3 class="w3-padding-16">My Skills</h3>
+    <p class="w3-wide">Java</p>
+    <div class="w3-progress-container">
+      <div class="w3-progressbar" style="width:90%">
+        <div class="w3-center w3-text-white">90%</div>
+      </div>
+    </div>
+    <p class="w3-wide">Spring</p>
+    <div class="w3-progress-container">
+      <div class="w3-progressbar" style="width:75%">
+        <div class="w3-center w3-text-white">75%</div>
+      </div>
+    </div>
+  <p class="w3-wide">MySQL</p>
+  <div class="w3-progress-container">
+    <div class="w3-progressbar" style="width:80%">
+      <div class="w3-center w3-text-white">80%</div>
+    </div>
+  </div>
+  <p class="w3-wide">Hibernate</p>
+  <div class="w3-progress-container">
+  <div class="w3-progressbar" style="width:75%">
+    <div class="w3-center w3-text-white">75%</div>
+  </div>
+</div>
+    <p class="w3-wide">Maven</p>
+    <div class="w3-progress-container">
+      <div class="w3-progressbar" style="width:80%">
+        <div class="w3-center w3-text-white">80%</div>
+      </div>
+    </div><br>
+  <p class="w3-wide">HTTML/CSS</p>
+  <div class="w3-progress-container">
+    <div class="w3-progressbar" style="width:55%">
+      <div class="w3-center w3-text-white">55%</div>
+    </div>
+  </div>
+<p class="w3-wide">JavaScript</p>
+<div class="w3-progress-container">
+  <div class="w3-progressbar" style="width:65%">
+    <div class="w3-center w3-text-white">65%</div>
+  </div>
+</div>
+<p class="w3-wide">Git</p>
+<div class="w3-progress-container">
+  <div class="w3-progressbar" style="width:90%">
+    <div class="w3-center w3-text-white">90%</div>
+  </div>
+</div>
+
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">90%</span><br>
+        Communication
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">90%</span><br>
+        Public Relations
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">90%</span><br>
+        Teamwork
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">100%</span><br>
+        Motivation
+      </div>
+    </div>
+
+    <button class="w3-btn w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+
+    <!-- Education -->
+    <h3 class="w3-padding-24">My Education</h3>
+    <p><span class="w3-large w3-text-black w3-margin-right">2016</span> Full-stack Bootcamp</p>
+    <p>Academia de Código</p><br>
+    <P> Intensive course in computer programming technologies with focus on Java technologies and frameworks.</p>
+    <p> Key Skills </p>
+    <ul>
+      <li>Programming in Java and OOP</li>
+      <li>Documentation and Code Conventions</li>
+      <li>Version Control Systems</li>
+      <li>Software Engineering</li>
+      <li>Testing</li>
+      <li>Databases, Frameworks and Web Development</li>
+  <!-- End About Section -->
+  </div>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-grey">My Projects</h2>
+    <hr class="w3-opacity">
+    <h3> Sokoban </h3>
+    <p class="w3-medium" > My first project in Java. Sokoban is a logic game that consists of moving the boxes to the correct sites. It was developed in Simple Java Graphics. The development of the game guided me among some of the basic aspects of object-oriented programming.</p>
+    <h3> Varre-Minas </h3>
+    <p class="w3-medium"> Varre-minas is a networking game that enables two players with each other remotley. After connecting to the server, each player try to guess where the bomb is. Whoever discovers more bombs wins.</p>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact Me</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Fundão, PT</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: (+351) 925142689</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: sofiaalves_17@hotmail.com</p>
+    </div>
+  <!-- End Contact Section -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <p class="w3-medium">Know me better at: </p>
+    <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+    <i class="fa fa-instagram w3-hover-text-purple"></i>
+    <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidenav
+function openNav() {
+document.getElementById("mySidenav").style.width = "60%";
+document.getElementById("mySidenav").style.display = "block";
+}
+
+function closeNav() {
+document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+</body>
+</html>
